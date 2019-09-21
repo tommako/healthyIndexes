@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="t.m.supy.healthyindexes.WHR_info_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WHR - Info"
+        android:id="@+id/textView87"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/linktositewhr"
+        android:id="@+id/link_whr_textView"
+        android:layout_below="@+id/textView87"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Waist–hip ratio or waist-to-hip ratio (WHR) is the ratio of the circumference of the waist to that of the hips. This is calculated as waist measurement divided by hip measurement (W ÷ H). For example, a person with a 25″ (64 cm) waist and 38″ (97 cm) hips has a waist–hip ratio of about 0.66.  The WHR has been used as an indicator or measure of health, and the risk of developing serious health conditions. WHR correlates with fertility (with different optimal values for males and females)."
+        android:id="@+id/textView90"
+        android:layout_below="@+id/link_whr_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+</RelativeLayout>

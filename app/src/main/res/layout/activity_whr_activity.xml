@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WHR_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Waist Circum. (cm):"
+        android:id="@+id/textView52"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/waist_editText"
+        android:layout_toStartOf="@+id/waist_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hip Circum.: (cm):"
+        android:id="@+id/textView55"
+        android:layout_below="@+id/waist_editText"
+        android:layout_toLeftOf="@+id/waist_editText"
+        android:layout_toStartOf="@+id/waist_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/waist_editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView58"
+        android:layout_toRightOf="@+id/textView58" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hip_editText"
+        android:layout_alignTop="@+id/textView55"
+        android:layout_alignRight="@+id/waist_editText"
+        android:layout_alignEnd="@+id/waist_editText"
+        android:layout_toRightOf="@+id/textView55"
+        android:layout_toEndOf="@+id/textView55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your gender:"
+        android:id="@+id/textView58"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hip_editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/whr_button"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/gender_radioGroup"
+        android:layout_toStartOf="@+id/gender_radioGroup" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gender_radioGroup"
+        android:layout_below="@+id/textView58"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView52"
+        android:layout_toEndOf="@+id/textView52"
+        android:layout_above="@+id/whr_button">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men"
+            android:id="@+id/radioButton5"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women"
+            android:id="@+id/radioButton6"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result:"
+        android:id="@+id/textView59"
+        android:layout_below="@+id/whr_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/result_textView"
+        android:layout_below="@+id/textView59"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

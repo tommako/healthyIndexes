@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="t.m.supy.healthyindexes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BMI_activity"
+            android:label="@string/bmi_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BMI_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BAI_activity"
+            android:label="@string/bai_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BAI_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ABSI_activity"
+            android:label="@string/absi_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.ABSI_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IBW_activity"
+            android:label="@string/ibw_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.IBW_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BFP_activity"
+            android:label="@string/bfp_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BFP_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BMR_activity"
+            android:label="@string/bmr_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BMR_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TDEE_activity"
+            android:label="@string/tdee_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.TDEE_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LBM_activity"
+            android:label="@string/lbm_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.LBM_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WHR_activity"
+            android:label="@string/whr_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.WHR_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PCF_activity"
+            android:label="@string/pcf_name">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.PCF_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BMI_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BMI_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ABSI_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.ABSI_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BAI_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BAI_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BFP_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BFP_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BMR_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BMR_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IBW_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.IBW_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LBM_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.LBM_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PCF_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.PCF_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WHR_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.WHR_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TDEE_info_activity">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.TDEE_info_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BMI_result_chart">
+            <intent-filter>
+                <action android:name="t.m.supy.healthyindexes.BMI_result_chart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

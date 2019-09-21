@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="t.m.supy.healthyindexes.BAI_info_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BAI info"
+        android:id="@+id/textView71"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/linktositebai"
+        android:id="@+id/link_bai_textView"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textView71"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The body adiposity index (BAI) is a method of measuring the amount of body fat in humans. The BAI is calculated without using body weight, unlike the body mass index (BMI). Instead, it uses the size of the hips compared to the person&apos;s height."
+        android:id="@+id/textView75"
+        android:layout_below="@+id/link_bai_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Uses:"
+        android:id="@+id/textView76"
+        android:layout_below="@+id/textView75"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The BAI could be a good tool to measure adiposity due, at least in part, to the advantages over other more complex mechanical or electrical systems. Probably, the most important advantage of BAI over BMI is that weight is not needed. However, in general it seems that the BAI does not overcome the limitations of BMI"
+        android:id="@+id/textView77"
+        android:layout_below="@+id/textView76"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

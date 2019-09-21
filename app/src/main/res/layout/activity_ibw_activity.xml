@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IBW_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height in cm:"
+        android:id="@+id/textView25"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView28" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weigth_editText"
+        android:layout_toRightOf="@+id/textView25"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose gender:"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView25"
+        android:layout_toLeftOf="@+id/weigth_editText"
+        android:layout_toStartOf="@+id/weigth_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose an Ideal Body Weight Formula:"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="66dp"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView26"
+        android:layout_alignRight="@+id/weigth_editText"
+        android:layout_alignEnd="@+id/weigth_editText"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26"
+        android:id="@+id/gender_radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man"
+            android:id="@+id/Man_radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women"
+            android:id="@+id/Women_radioButton"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/ibw_button"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView25"
+        android:layout_alignEnd="@+id/textView25" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/ibw_button"
+        android:layout_toEndOf="@+id/ibw_button"
+        android:id="@+id/method_radioGroup"
+        android:layout_above="@+id/ibw_button">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J. D. Robinson"
+            android:id="@+id/Robinson_radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. R. Miller"
+            android:id="@+id/Miller_radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G. J. Hamwi"
+            android:id="@+id/Hamwi_radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. J. Devine"
+            android:id="@+id/Devine_radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Mass Index"
+            android:id="@+id/BodyMassIndexFormula_radioButton"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result:"
+        android:id="@+id/textView28"
+        android:layout_marginTop="64dp"
+        android:layout_alignTop="@+id/ibw_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result_textView"
+        android:layout_toRightOf="@+id/textView28"
+        android:layout_alignRight="@+id/method_radioGroup"
+        android:layout_alignEnd="@+id/method_radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/textView28" /><![CDATA[
+
+
+
+
+
+
+    />
+
+
+
+
+]]>
+</RelativeLayout>

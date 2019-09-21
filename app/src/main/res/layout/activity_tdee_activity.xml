@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="t.m.supy.healthyindexes.TDEE_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight in kg:"
+        android:id="@+id/textView44"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/age_editText"
+        android:layout_toStartOf="@+id/age_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height (cm):"
+        android:id="@+id/textView45"
+        android:layout_below="@+id/weight_editText"
+        android:layout_alignRight="@+id/textView44"
+        android:layout_alignEnd="@+id/textView44" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age:"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/height_editText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_editText"
+        android:layout_alignTop="@+id/textView44"
+        android:layout_alignLeft="@+id/age_editText"
+        android:layout_alignStart="@+id/age_editText"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_editText"
+        android:layout_below="@+id/weight_editText"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup"
+        android:layout_alignLeft="@+id/age_editText"
+        android:layout_alignStart="@+id/age_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_editText"
+        android:layout_below="@+id/height_editText"
+        android:layout_toRightOf="@+id/textView47"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your gender:"
+        android:id="@+id/textView47"
+        android:layout_below="@+id/age_editText"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/tdee_button"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/textView50"
+        android:layout_toLeftOf="@+id/activity_radioGroup"
+        android:layout_toStartOf="@+id/activity_radioGroup" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gender_radioGroup"
+        android:layout_alignTop="@+id/textView47"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView47"
+        android:layout_toEndOf="@+id/textView47"
+        android:layout_above="@+id/activity_radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man"
+            android:id="@+id/radioButton_man"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woman"
+            android:id="@+id/radioButton_woman"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result:"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/tdee_button"
+        android:layout_toLeftOf="@+id/textView45"
+        android:layout_toStartOf="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/result_textView"
+        android:layout_below="@+id/textView48"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/activity_radioGroup"
+        android:layout_alignEnd="@+id/activity_radioGroup"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your physical activity level:"
+        android:id="@+id/textView50"
+        android:layout_below="@+id/textView47"
+        android:layout_alignRight="@+id/textView47"
+        android:layout_alignEnd="@+id/textView47"
+        android:layout_marginTop="41dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/gender_radioGroup"
+        android:layout_alignStart="@+id/gender_radioGroup"
+        android:layout_above="@+id/textView48"
+        android:id="@+id/activity_radioGroup"
+        android:layout_alignTop="@+id/textView50">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedentary"
+            android:id="@+id/radioButton_sedentary"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lighty Active"
+            android:id="@+id/radioButton_lightyActive"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderately Active"
+            android:id="@+id/radioButton_moderatelyActive"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Active"
+            android:id="@+id/radioButton_veryActive"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extremely Active"
+            android:id="@+id/radioButton_extremelyActive"
+            android:checked="false" />
+    </RadioGroup>
+</RelativeLayout>

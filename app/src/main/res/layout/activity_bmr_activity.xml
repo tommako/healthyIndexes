@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="t.m.supy.healthyindexes.BMR_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight in kg:"
+        android:id="@+id/textView36"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height (cm):"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/weight_editText"
+        android:layout_toLeftOf="@+id/weight_editText"
+        android:layout_toStartOf="@+id/weight_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age:"
+        android:id="@+id/textView38"
+        android:layout_below="@+id/height_editText"
+        android:layout_alignRight="@+id/textView37"
+        android:layout_alignEnd="@+id/textView37" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_editText"
+        android:layout_alignTop="@+id/textView36"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup"
+        android:layout_toRightOf="@+id/textView36"
+        android:layout_toEndOf="@+id/textView36" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/weight_editText"
+        android:layout_alignLeft="@+id/weight_editText"
+        android:layout_alignStart="@+id/weight_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_editText"
+        android:layout_below="@+id/height_editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/height_editText"
+        android:layout_alignStart="@+id/height_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your gender:"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/age_editText"
+        android:layout_alignRight="@+id/textView38"
+        android:layout_alignEnd="@+id/textView38" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/bmr_button"
+        android:layout_marginTop="57dp"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_centerVertical="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gender_radioGroup"
+        android:layout_below="@+id/textView39"
+        android:layout_toRightOf="@+id/textView36"
+        android:layout_toEndOf="@+id/textView36"
+        android:layout_above="@+id/result_textView">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man"
+            android:id="@+id/radioButton_Man"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woman"
+            android:id="@+id/radioButton_Woman"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/result_textView"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView41"
+        android:layout_toRightOf="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result:"
+        android:id="@+id/textView41"
+        android:layout_below="@+id/bmr_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

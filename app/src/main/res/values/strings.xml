@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Health indices</string>
+    <string name="bmi_name">BMI Calculate</string>
+    <string name="absi_name">ABSI Calculate</string>
+    <string name="bai_name">BAI Calculate</string>
+    <string name="bfp_name">BFP Calculate</string>
+    <string name="bmr_name">BMR Calculate</string>
+    <string name="ibw_name">IBW Calculate</string>
+    <string name="lbm_name">LBM Calculate</string>
+    <string name="pcf_name">PCF Calculate</string>
+    <string name="tdee_name">TDEE Calculate</string>
+    <string name="whr_name">WHR Calculate</string>
+    <string name="title_activity_bai_activity">BAI_activity</string>
+    <string name="linktosite">
+        <a href="https://en.wikipedia.org/wiki/Body_mass_index">click here for more info</a>
+    </string>
+    <string name="linktositeabsi">
+        <a href="https://en.wikipedia.org/wiki/Body_Shape_Index">click here for more info</a>
+    </string>
+    <string name="linktositebai">
+        <a href="https://en.wikipedia.org/wiki/Body_adiposity_index">click here for more info</a>
+    </string>
+    <string name="linktositebfp">
+        <a href="https://en.wikipedia.org/wiki/Body_fat_percentage">click here for more info</a>
+    </string>
+    <string name="linktositebmr">
+        <a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">click here for more info</a>
+    </string>
+    <string name="linktositeibw">
+        <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2044.2011.06782.x/full">click here for more info</a>
+    </string>
+    <string name="linktositelbm">
+        <a href="https://en.wikipedia.org/wiki/Lean_body_mass">click here for more info</a>
+    </string>
+    <string name="linktositepcf">
+        <a href="https://www.bodybuilding.com/content/beginning-nutrition-the-facts-about-protein-carbs-fat.html">click here for more info</a>
+    </string>
+    <string name="linktositetdee">
+        <a href="https://en.wikipedia.org/wiki/Physical_activity_level">click here for more info</a>
+    </string>
+    <string name="linktositewhr">
+        <a href="https://en.wikipedia.org/wiki/Waist%E2%80%93hip_ratio">click here for more info</a>
+    </string>
+
+</resources>

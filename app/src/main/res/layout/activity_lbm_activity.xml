@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="t.m.supy.healthyindexes.LBM_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight in kg:"
+        android:id="@+id/textView49"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView53"
+        android:layout_alignEnd="@+id/textView53" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height (cm):"
+        android:id="@+id/textView51"
+        android:layout_below="@+id/weight_editText"
+        android:layout_alignLeft="@+id/textView49"
+        android:layout_alignStart="@+id/textView49" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_editText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView49"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_editText"
+        android:layout_alignTop="@+id/textView51"
+        android:layout_alignLeft="@+id/weight_editText"
+        android:layout_alignStart="@+id/weight_editText"
+        android:layout_alignRight="@+id/weight_editText"
+        android:layout_alignEnd="@+id/weight_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your gender:"
+        android:id="@+id/textView53"
+        android:layout_below="@+id/height_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/lbm_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView51"
+        android:layout_alignEnd="@+id/textView51"
+        android:layout_marginBottom="116dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gender_radioGroup"
+        android:layout_toRightOf="@+id/textView56"
+        android:layout_toEndOf="@+id/textView56"
+        android:layout_above="@+id/textView56"
+        android:layout_alignTop="@+id/textView53">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man"
+            android:id="@+id/radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woman"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result:"
+        android:id="@+id/textView54"
+        android:layout_alignTop="@+id/lbm_button"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose formula for calculate:"
+        android:id="@+id/textView56"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/lbm_button"
+        android:layout_alignEnd="@+id/lbm_button" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/formula_radioGroup"
+        android:layout_toRightOf="@+id/textView56"
+        android:layout_alignRight="@+id/gender_radioGroup"
+        android:layout_alignEnd="@+id/gender_radioGroup"
+        android:layout_below="@+id/gender_radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W.P.T. James&apos;s"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R. Hume&apos;s"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:layout_below="@+id/formula_radioGroup"
+            android:layout_toRightOf="@+id/textView56"
+            android:layout_toEndOf="@+id/textView56" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result_textView"
+        android:layout_below="@+id/textView54"
+        android:layout_toRightOf="@+id/textView54"
+        android:layout_alignRight="@+id/formula_radioGroup"
+        android:layout_alignEnd="@+id/formula_radioGroup"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
